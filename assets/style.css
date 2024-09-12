@@ -1,3 +1,7 @@
+.heading {
+  text-align: center;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -6,12 +10,32 @@
 }
 
 .flex-item {
-  flex: 1 1 400px; /* Grow, shrink, and set the basis to 200px */
-  max-width: 400px; /* Optional: Limit the max width */
+  flex: 1 1 200px; /* Grow, shrink, and set the basis to 200px */
+  max-width: 200px; /* Optional: Limit the max width */
 }
 
 .flex-item img {
   width: 100%;
   height: auto;
   display: block; /* Ensures the image is block-level and responsive */
+}
+
+
+.grid-container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px; /* Add some space between the items */
+  justify-items: center; /* Center items horizontally */
+}
+
+.img-heading {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures the image is block-level and responsive */
+  max-width: 200px; /* Optional: Limit the max width */
 }
