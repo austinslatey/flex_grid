@@ -33,6 +33,11 @@
   text-align: center;
 }
 
+.grid-item, .flex-item {
+  border: 1px solid;
+  padding: 10px;
+}
+
 .grid-item img {
   width: 100%;
   height: auto;
